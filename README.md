@@ -1,6 +1,8 @@
 Итоговый отчет по НТО от команды `pwn is 0x12c bucks`
 ==========
 
+# Task-Based
+
 ## crypto1
 Решалка: [script.sage](crypto1/script.sage)
 
@@ -100,3 +102,6 @@ if (options.successReturnToOrRedirect) {
 ```
 
 Используя prototype pollution, устанавливаем значение этого поля в `'/admin/flag'` и получаем флаг: `nto{pr0t0typ3_pollut10n_g4dged5_f56acc00f5eb803de88496b}`
+
+
+# Расследование инцидентов
