@@ -1,0 +1,24 @@
+import requests as req
+from Crypto.Util.number import *
+import json
+
+n = 58496429490531250613673596467291112405564203717087884076462388197999528676561650964996855601947856295309031467014294645714449595151774685385994402964445093188439162803467660037443367872173898209675574900335325363140432638452066947980126490122283369097951527271466516908734373467962340369903678217837324168613
+
+
+url = 'http://10.10.15.10:1177/guess_bit?bit='
+ans = ''
+for i in range(135):
+    print(i)
+    good = False
+    for j in range(10):
+        l = json.loads(req.get(url + str(i)).text)['guess']
+        if l < n // 2:
+            good = True
+    if good:
+        ans += '1'
+    else:
+        ans += '0'
+
+l = int(ans, 2)
+
+print(long_to_bytes(l))
