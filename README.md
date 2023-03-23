@@ -107,6 +107,8 @@ if (options.successReturnToOrRedirect) {
 
 ## Машина 1
 
+Сначала сбросим пароль от рута, например как описано в этой статье: [Статья](https://en.wikibooks.org/wiki/Linux_Guide/Reset_a_forgotten_root_password)
+
 ### Как злоумышленник попал на машину?
 
 Находим файл minecraft.jar, декомпилируем, находим реверс шелл ![](screenshots/1.png).
